@@ -1,0 +1,15 @@
+{
+  "name": "zgagatek",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "nunjucks": "^3.2.3",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-nunjucks": "^2.2.2"
+  },
+  "devDependencies": {
+    "sass": "^1.34.1",
+    "typescript": "^4.3.2"
+  }
+}
