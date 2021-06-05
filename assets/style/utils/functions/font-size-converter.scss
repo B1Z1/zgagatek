@@ -1,0 +1,6 @@
+@use "sass:math";
+
+@function font-size-converter($size, $base-size) {
+  @return math.div($size, $base-size);
+}
+

@@ -1,3 +1,9 @@
+@use 'assets/style/fonts/fonts';
+@use 'assets/style/root';
+
 @use 'assets/style/reset';
+@use 'assets/style/global';
+
+@use 'assets/style/atomic/atomic';
 
 @use 'assets/style/components';

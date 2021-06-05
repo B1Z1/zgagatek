@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "parcel index.njk",
+    "build": "parcel build index.njk"
+  },
   "dependencies": {
+    "animejs": "^3.2.1",
+    "scrollmagic": "^2.0.8"
+  },
+  "devDependencies": {
+    "@types/animejs": "^3.1.3",
+    "@types/scrollmagic": "^2.0.1",
+    "sass": "^1.34.1",
+    "typescript": "^4.3.2",
     "nunjucks": "^3.2.3",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-nunjucks": "^2.2.2"
-  },
-  "devDependencies": {
-    "sass": "^1.34.1",
-    "typescript": "^4.3.2"
   }
 }

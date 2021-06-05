@@ -1,0 +1,25 @@
+@use 'assets/style/utils/variables/font';
+@use 'assets/style/utils/variables/color';
+
+$headers: (
+    'h1': font.$font-size-xxl,
+    'h2': font.$font-size-l,
+    'h3': font.$font-size-m
+);
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: color.$main-2;
+  font-size: #{font.$base-size}px;
+  font-family: love-ya-like-a-sister;
+}
+
+@each $header, $size in $headers {
+  #{$header} {
+    font-size: #{$size}rem;
+  }
+}

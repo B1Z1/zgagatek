@@ -1,0 +1,11 @@
+@use 'assets/style/utils/variables/font';
+
+.font {
+  &-size {
+    @each $name, $value in font.$font-size-map {
+      &-#{$name} {
+        font-size: #{$value}rem;
+      }
+    }
+  }
+}

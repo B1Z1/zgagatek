@@ -1,0 +1,18 @@
+@use "assets/style/utils/variables/color";
+
+$color-types: (
+    'text': 'color',
+    'bg': 'background-color'
+);
+
+.c {
+  @each $type, $property in $color-types {
+    &-#{$type} {
+      @each $name, $value in color.$var-color-map {
+        &-#{$name} {
+          #{$property}: #{$value};
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+$main-1: #FFFFFF;
+$main-2: #000000;
+
+$primary-1: #FFC142;
+$primary-2: #FF3F27;
+
+$secondary-1: #F5F5F5;
+$secondary-2: #E4E4E4;
+$secondary-3: #CECECE;
+$secondary-4: #727272;
+
+$color-map: (
+    'main-1': $main-1,
+    'main-2': $main-2,
+    'primary-1': $primary-1,
+    'primary-2': $primary-2,
+    'secondary-1': $secondary-1,
+    'secondary-2': $secondary-2,
+    'secondary-3': $secondary-3,
+    'secondary-4': $secondary-4,
+);
+
+$var-primary-1: var(--primary-1);
+$var-primary-2: var(--primary-2);
+
+$var-main-1: var(--main-1);
+$var-main-2: var(--main-2);
+
+$var-secondary-1: var(--secondary-1);
+$var-secondary-2: var(--secondary-2);
+$var-secondary-3: var(--secondary-3);
+$var-secondary-4: var(--secondary-4);
+
+$var-color-map: (
+    'main-1': $var-main-1,
+    'main-2': $var-main-2,
+    'primary-1': $var-primary-1,
+    'primary-2': $var-primary-2,
+    'secondary-1': $var-secondary-1,
+    'secondary-2': $var-secondary-2,
+    'secondary-3': $var-secondary-3,
+    'secondary-4': $var-secondary-4,
+);
