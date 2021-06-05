@@ -1,0 +1,11 @@
+.section-hero {
+  position: relative;
+  overflow-x: hidden;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}

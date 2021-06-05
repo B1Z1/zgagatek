@@ -1,0 +1,18 @@
+{
+  "mount": {
+    "src": "/",
+    "assets": {
+      "url": "/assets",
+      "static": true
+    }
+  },
+  "plugins": [
+    "@snowpack/plugin-webpack",
+    "@snowpack/plugin-sass",
+    "snowpack-plugin-nunjucks"
+  ],
+  "optimize": {
+    "bundle": true,
+    "minify": true
+  }
+}
