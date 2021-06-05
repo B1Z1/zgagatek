@@ -1,7 +1,15 @@
 {
   "mount": {
-    "src": "/",
-    "assets": {
+    "src/scripts": {
+      "url": "/scripts"
+    },
+    "src/styles": {
+      "url": "/styles"
+    },
+    "src/pages": {
+      "url": "/"
+    },
+    "src/assets": {
       "url": "/assets",
       "static": true
     }
@@ -14,5 +22,9 @@
   "optimize": {
     "bundle": true,
     "minify": true
+  },
+  "alias": {
+    "scripts": "./src/scripts",
+    "assets": "./src/assets"
   }
 }

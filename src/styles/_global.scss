@@ -1,5 +1,5 @@
-@use 'assets/style/utils/variables/font';
-@use 'assets/style/utils/variables/color';
+@use 'src/styles/utils/variables/_font';
+@use 'src/styles/utils/variables/_color';
 
 $headers: (
     'h1': font.$font-size-xxl,

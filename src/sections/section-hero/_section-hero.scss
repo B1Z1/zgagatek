@@ -1,6 +1,8 @@
 .section-hero {
   position: relative;
+  height: 100vh;
   overflow-x: hidden;
+  color: white;
 
   &__background {
     position: absolute;

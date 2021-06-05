@@ -1,0 +1,11 @@
+@use "fullpage.js/dist/fullpage.min.css";
+
+@use 'src/styles/fonts/_fonts';
+@use 'src/styles/_root';
+
+@use 'src/styles/_reset';
+@use 'src/styles/_global';
+
+@use 'src/styles/atomic/_atomic';
+
+@use 'src/styles/_components';

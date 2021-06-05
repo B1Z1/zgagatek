@@ -1,5 +1,5 @@
-@use "assets/style/utils/mixins/directions";
-@use "assets/style/utils/variables/spacing";
+@use "src/styles/utils/mixins/_directions";
+@use "src/styles/utils/variables/_spacing";
 
 $spacing-types: (
     'p': padding,

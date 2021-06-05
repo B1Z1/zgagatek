@@ -1,4 +1,4 @@
-@use "assets/style/utils/variables/directions";
+@use "src/styles/utils/variables/directions";
 
 @mixin with-directions($parameter, $suffix, $value) {
   &-#{$suffix} {
