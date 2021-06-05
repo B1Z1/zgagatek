@@ -1,12 +1,12 @@
-@use 'assets/style/utils/functions/font-size-converter' as *;
+@use "sass:math";
 
 $base-size: 16;
 
-$font-size-xs: font-size-converter(12, $base-size);
-$font-size-s: font-size-converter($base-size, $base-size);
-$font-size-m: font-size-converter(20, $base-size);
-$font-size-l: font-size-converter(24, $base-size);
-$font-size-xxl: font-size-converter(88, $base-size);
+$font-size-xs: math.div(12, $base-size);
+$font-size-s: math.div($base-size, $base-size);
+$font-size-m: math.div(20, $base-size);
+$font-size-l: math.div(24, $base-size);
+$font-size-xxl: math.div(88, $base-size);
 
 $font-size-map: (
     'xs': $font-size-xs,
