@@ -10,10 +10,9 @@
     "moduleResolution": "node",
     "target": "es5",
     "allowJs": true,
-    "allowSyntheticDefaultImports": true,
     "paths": {
-      "scripts/*": [
-        "src/scripts/*"
+      "~*": [
+        "./src/*"
       ]
     }
   },

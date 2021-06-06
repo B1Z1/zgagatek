@@ -18,6 +18,10 @@ body {
   font-family: love-ya-like-a-sister;
 }
 
+p {
+  line-height: 1.4em;
+}
+
 @each $header, $size in $headers {
   #{$header} {
     font-size: #{$size}rem;
