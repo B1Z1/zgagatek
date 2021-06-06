@@ -1,7 +1,7 @@
 {% macro Link(value, href, additionalClass) %}
     <a href="{{ href }}"
        class="link d-inline-flex align-items-center{% if additionalClass %} {{ additionalClass }}{% endif %}">
-        <img src="./assets/img/link-background.svg"
+        <img src="./assets/img/link/link-background.svg"
              class="link__background"
              alt="link background">
 
@@ -18,3 +18,4 @@
         </svg>
     </a>
 {% endmacro %}
+
