@@ -14,8 +14,16 @@ $headers: (
 html,
 body {
   color: color.$main-2;
-  font-size: #{font.$base-size}px;
+  font-size: #{font.$mobile-base-size}px;
   font-family: love-ya-like-a-sister;
+
+  @media (min-width: 768px) {
+    font-size: #{font.$tablet-base-size}px;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: #{font.$base-size}px;
+  }
 }
 
 p {

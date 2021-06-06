@@ -1,6 +1,8 @@
 @use "sass:math";
 
 $base-size: 16;
+$tablet-base-size: 14;
+$mobile-base-size: 12;
 
 $font-size-xs: math.div(12, $base-size);
 $font-size-s: math.div($base-size, $base-size);

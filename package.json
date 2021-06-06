@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
+    "bootstrap": "^5.0.1",
     "fullpage.js": "^3.1.1",
     "scrollmagic": "^2.0.8"
   },

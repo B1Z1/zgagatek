@@ -1,3 +1,5 @@
+{% from "src/components/link/link.njk" import Link %}
+
 <section class="section-hero">
     <div class="section-hero__background c-bg-primary-1">
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -9,9 +11,9 @@
         </svg>
     </div>
 
-    <div class="section-hero__content">
-        <div class="section-hero__intro">
-            <h1 class="section-hero__intro-title">
+    <div class="section-hero__content container d-flex align-items-center justify-content-center flex-column flex-xl-row">
+        <div class="section-hero__intro col-12 col-xl-3">
+            <h1 class="section-hero__intro-title d-inline-block">
                 Zgagatek
 
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -23,27 +25,28 @@
                 </svg>
             </h1>
 
-            <img class="section-hero__arrow-separator"
+            <img class="section-hero__arrow-separator d-block"
                  src="./assets/img/up-arrow-with-scribble.svg"
                  alt="Strzałka w dół">
 
             <p class="font-size-m">
-                Pali się do pracy każdego dnia.
-                Choć czasami zastyga przy biurku
+                Pali się do pracy każdego dnia. <br/>
+                Choć czasami zastyga przy biurku <br/>
                 z kwaśną miną.
             </p>
         </div>
 
-        <div class="section-hero__character">
-            {% include 'src/sections/section-hero/section-hero-character.njk' %}
+        <div class="section-hero__character col-12 col-lg-8 col-xl-6">
+            {% include 'src/sections/hero/hero-character.njk' %}
         </div>
 
-        <div class="section-hero__discover">
-            <p class="font-size-m">
-                Zgagatek czuje to, co Ty.
-                Doskonale rozumie i wie, że trzeba walczyć
+        <div class="section-hero__discover col-12 col-xl-3">
+            <p class="section-hero__discover-text font-size-m">
+                Zgagatek czuje to, co Ty. <br/>
+                Doskonale rozumie i wie, że trzeba walczyć <br/>
                 z wewnętrznymi problemami.
             </p>
+            {{ Link('Poznaj przygody Zgagatka', null, 'section-hero__discover-link') }}
         </div>
     </div>
 </section>
