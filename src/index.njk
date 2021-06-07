@@ -10,11 +10,14 @@
 </head>
 <body>
 <div data-fullpage-container>
+{#    <div class="section">#}
+{#        {% include "src/sections/hero/hero.njk" %}#}
+{#    </div>#}
+{#    <div class="section">#}
+{#        {% include "src/sections/sick/sick.njk" %}#}
+{#    </div>#}
     <div class="section">
-        {% include "src/sections/hero/hero.njk" %}
-    </div>
-    <div class="section">
-        {% include "src/sections/sick/sick.njk" %}
+        {% include "src/sections/team/team.njk" %}
     </div>
 </div>
 <script type="module" src="./scripts/index.ts"></script>
