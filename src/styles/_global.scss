@@ -2,9 +2,9 @@
 @use 'src/styles/utils/variables/_color';
 
 $headers: (
-    'h1': font.$font-size-xxl,
-    'h2': font.$font-size-l,
-    'h3': font.$font-size-m
+        'h1': font.$font-size-xxl,
+        'h2': font.$font-size-l,
+        'h3': font.$font-size-m
 );
 
 * {
@@ -36,6 +36,7 @@ p {
   }
 }
 
-.fp-scroller {
+.fp-scroller,
+.fp-scrollable {
   overflow: visible;
 }
