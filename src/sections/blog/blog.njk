@@ -1,0 +1,47 @@
+{% from "src/components/link/link.njk" import Link %}
+{% from "src/components/card/card.njk" import Card %}
+
+<section class="blog d-flex flex-column justify-content-center container">
+    <h2 class="blog__title font-size-xl">
+        Blog
+    </h2>
+
+    <p class="blog__sub-title font-size-l c-text-primary-2">
+        Lorem ipsum dolor sit amet
+    </p>
+
+    <div class="blog__list d-flex flex-wrap">
+        <div class="blog__card blog__card--first col-lg-4">
+            {{ Card(
+                'Lorem ipsum dolor sit',
+                'W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem...',
+                './assets/img/blog/card-image-1.png',
+                'Example Alt',
+                '#',
+                1
+            ) }}
+        </div>
+
+        <div class="blog__card col-lg-4">
+            {{ Card(
+                'Lorem ipsum dolor sit',
+                'W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem...',
+                './assets/img/blog/card-image-2.png',
+                'Example Alt',
+                '#',
+                2
+            ) }}
+        </div>
+
+        <div class="blog__card blog__card--last col-lg-4">
+            {{ Card(
+                'Lorem ipsum dolor sit',
+                'W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem...',
+                './assets/img/blog/card-image-3.png',
+                'Example Alt',
+                '#',
+                3
+            ) }}
+        </div>
+    </div>
+</section>

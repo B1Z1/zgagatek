@@ -1,0 +1,44 @@
+.blog {
+  position: relative;
+  padding: 16px 0;
+  height: 100%;
+
+  @media (min-width: 1440px) {
+    max-width: 1680px;
+  }
+
+  &__title,
+  &__sub-title {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__sub-title {
+    margin-bottom: 44px;
+
+    @media (min-width: 1400px) {
+      margin-bottom: 84px;
+    }
+  }
+
+  &__card {
+    position: relative;
+    padding: 0 6px;
+    margin-bottom: 24px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 0;
+    }
+
+    &--first {
+      padding-left: 0;
+    }
+
+    &--last {
+      padding-right: 0;
+    }
+  }
+}
