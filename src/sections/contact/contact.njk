@@ -1,0 +1,64 @@
+{% from "src/components/button/button.njk" import Button %}
+
+<section class="contact d-flex align-items-center c-text-main-1">
+    <div class="contact__wrapper c-bg-primary-1">
+        <img src="./assets/img/contact/background-top.svg" alt="" class="contact__top-background">
+        <img src="./assets/img/contact/background-bottom.svg" alt="" class="contact__bottom-background">
+
+        <div class="contact__container container d-flex flex-wrap justify-content-between align-items-center">
+            <div class="contact__content col-12 col-xl-6">
+                <h2 class="contact__title font-size-xl">
+                    Kontakt
+                </h2>
+
+                <span class="contact__underline font-size-xl">
+                        _ _ _
+                </span>
+
+                <p class="contact__sub-title font-size-l">
+                    Zgadajmy się jeszcze dziś!
+                </p>
+
+                <form class="contact__form d-flex justify-content-center flex-wrap col-12 col-xl-10">
+                    <div class="contact__field-wrapper contact__field-wrapper-name">
+                        <img class="contact__field-background" src="./assets/img/contact/input-background.svg"
+                             alt="Tło formularza">
+                        <input type="text" placeholder="Twoje imię" class="contact__field">
+                    </div>
+
+                    <div class="contact__field-wrapper contact__field-wrapper-email">
+                        <img class="contact__field-background" src="./assets/img/contact/input-background.svg"
+                             alt="Tło formularza">
+                        <input type="text" placeholder="Adres e-mail" class="contact__field">
+                    </div>
+
+                    <div class="contact__field-wrapper contact__field-wrapper-message col-12">
+                        <img class="contact__field-background" src="./assets/img/contact/text-area-background.svg"
+                             alt="Tło formularza">
+                        <textarea rows="3" placeholder="Treść wiadomości"
+                                  class="contact__field contact__text-area"></textarea>
+                    </div>
+
+                    <label class="contact__field-wrapper contact__field-wrapper-rodo d-flex align-items-center">
+                        <input class="contact__checkbox" type="checkbox">
+
+                        <span class="contact__custom-checkbox-wrapper">
+                            <img src="./assets/img/contact/checkbox.svg" alt="Checkbox"
+                                 class="contact__custom-checkbox-background">
+
+                            <span class="contact__custom-checkbox-dot c-bg-primary-1"></span>
+                        </span>
+
+                        <span>Rodo  ipsum dolor sit amet, consectetur adipiscing elit</span>
+                    </label>
+
+                    <div class="col-12">
+                        {{ Button('Wyślij') }}
+                    </div>
+                </form>
+            </div>
+
+            <img class="col-12 col-xl-6" src="./assets/img/contact/koperta.svg" alt="Koperta">
+        </div>
+    </div>
+</section>

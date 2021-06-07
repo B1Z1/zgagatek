@@ -15,7 +15,7 @@ html,
 body {
   color: color.$main-2;
   font-size: #{font.$mobile-base-size}px;
-  font-family: love-ya-like-a-sister;
+  font-family: love-ya-like-a-sister, 'serif';
 
   @media (min-width: 768px) {
     font-size: #{font.$tablet-base-size}px;
@@ -34,4 +34,8 @@ p {
   #{$header} {
     font-size: #{$size}rem;
   }
+}
+
+.fp-scroller {
+  overflow: visible;
 }
