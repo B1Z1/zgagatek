@@ -1,0 +1,7 @@
+@use 'src/styles/utils/variables/color';
+
+:root {
+  @each $name, $value in color.$color-map {
+    --#{$name}: #{$value};
+  }
+}

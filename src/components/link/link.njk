@@ -1,0 +1,21 @@
+{% macro Link(value, href, additionalClass) %}
+    <a href="{{ href }}"
+       class="link d-inline-flex align-items-center{% if additionalClass %} {{ additionalClass }}{% endif %}">
+        <img src="./assets/img/link/link-background.svg"
+             class="link__background"
+             alt="link background">
+
+        <span class="link__value c-text-main-1 font-size-m">
+            {{ value }}
+        </span>
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 10.209 20.499"
+             class="link__arrow">
+            <path d="M713.932,441.6l4.135,4.787a12.191,12.191,0,0,1,2.068,2.393q1.4.107-.091.586a8.379,8.379,0,0,0-.874.589,12.779,12.779,0,0,0-5.029,7.815c-.389,1.813,2.47,2.588,2.861.767a10.111,10.111,0,0,1,4.54-6.679c.979-.616,2.072-.992,2.219-2.283.16-1.408-1.411-2.7-2.217-3.634l-5.513-6.382c-1.23-1.424-3.319.627-2.1,2.041Z"
+                  transform="translate(-713.562 -439.078)"
+                  fill="#fff"/>
+        </svg>
+    </a>
+{% endmacro %}
+

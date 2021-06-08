@@ -1,15 +1,22 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
     "noImplicitAny": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "sourceMap": true
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "es5",
+    "allowJs": true,
+    "paths": {
+      "~*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
+    "./src/**/*"
   ]
 }

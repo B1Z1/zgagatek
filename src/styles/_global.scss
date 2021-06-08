@@ -1,0 +1,42 @@
+@use 'src/styles/utils/variables/_font';
+@use 'src/styles/utils/variables/_color';
+
+$headers: (
+        'h1': font.$font-size-xxl,
+        'h2': font.$font-size-l,
+        'h3': font.$font-size-m
+);
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: color.$main-2;
+  font-size: #{font.$mobile-base-size}px;
+  font-family: love-ya-like-a-sister, 'serif';
+
+  @media (min-width: 768px) {
+    font-size: #{font.$tablet-base-size}px;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: #{font.$base-size}px;
+  }
+}
+
+p {
+  line-height: 1.4em;
+}
+
+@each $header, $size in $headers {
+  #{$header} {
+    font-size: #{$size}rem;
+  }
+}
+
+.fp-scroller,
+.fp-scrollable {
+  overflow: visible;
+}

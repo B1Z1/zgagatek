@@ -1,0 +1,19 @@
+@use "sass:math";
+
+$base-size: 16;
+$tablet-base-size: 14;
+$mobile-base-size: 12;
+
+$font-size-xs: math.div(12, $base-size);
+$font-size-s: math.div($base-size, $base-size);
+$font-size-m: math.div(20, $base-size);
+$font-size-l: math.div(24, $base-size);
+$font-size-xxl: math.div(88, $base-size);
+
+$font-size-map: (
+    'xs': $font-size-xs,
+    's': $font-size-s,
+    'm': $font-size-m,
+    'l': $font-size-l,
+    'xl': $font-size-xxl
+);
