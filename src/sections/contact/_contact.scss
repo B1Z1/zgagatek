@@ -175,4 +175,12 @@
       transition: opacity .3s ease-in-out;
     }
   }
+
+  &__image {
+    width: 100%;
+
+    &-wrapper {
+      position: relative;
+    }
+  }
 }
