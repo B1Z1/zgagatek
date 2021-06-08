@@ -1,3 +1,5 @@
+@use 'src/styles/utils/variables/color';
+
 .sick {
   padding-top: 16px;
   height: 100%;
@@ -32,13 +34,95 @@
   }
 
   &__character {
-    max-width: 2155px;
+    position: relative;
+    width: 100%;
 
     @media (min-width: 1400px) {
       position: absolute;
       left: 100%;
       top: 50%;
-      transform: translate(-40%, -50%);
+      width: 1600px;
+      transform: translate(-60%, -50%);
+    }
+
+    &-image {
+      width: 100%;
+    }
+  }
+
+  &__tip {
+    position: absolute;
+    display: none;
+
+    @media (min-width: 1400px) {
+      display: block;
+    }
+
+    &-circle {
+      width: 36px;
+      height: 36px;
+      border: 6px color.$var-main-1 solid;
+      border-radius: 50%;
+      background-color: color.$var-primary-1;
+      transition: background-color .3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background-color: color.$var-primary-2;
+
+        + .sick__tip-content {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    &-content {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 216px;
+      height: 216px;
+      padding: 32px;
+      border-radius: 50%;
+      text-align: center;
+      box-shadow: 5px 5px 0 2px rgba(0, 0, 0, .4);
+      transform: translate(-50%, 8px);
+      opacity: 0;
+      visibility: hidden;
+      transition: {
+        property: opacity, visibility;
+        duration: .3s;
+        timing-function: ease-in-out;
+      };
+
+      &-title {
+        margin-bottom: 8px;
+      }
+
+      &-dash {
+        margin-bottom: 20px;
+      }
+    }
+
+    &--first {
+      top: 412px;
+      left: 400px;
+    }
+
+    &--second {
+      top: 340px;
+      left: 560px;
+    }
+
+    &--third {
+      top: 412px;
+      left: 604px;
+    }
+
+    &--fourth {
+      top: 550px;
+      left: 604px;
     }
   }
 }
